@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name FBCE Nabi ver 2.3
+// @name FBCE
 // @namespace https://www.bondageprojects.com/
-// @version 0.1
+// @version 2.3
 // @description Customize the expressions used by FBC
 // @author Sidious
 // @match https://bondageprojects.elementfx.com/*
