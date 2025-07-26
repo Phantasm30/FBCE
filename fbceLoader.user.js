@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name FBCE Nabi ver
+// @name FBCE Nabi ver Loader
 // @namespace https://www.bondageprojects.com/
 // @version 0.1
 // @description Customize the expressions used by FBC
