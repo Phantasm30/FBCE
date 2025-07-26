@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name FBCE
+// @name FBCE Nabi ver 2.5
 // @namespace https://www.bondageprojects.com/
-// @version 2.3
+// @version 0.1
 // @description Customize the expressions used by FBC
 // @author Sidious
 // @match https://bondageprojects.elementfx.com/*
@@ -302,6 +302,15 @@
 			Duration: 10000,
 			Expression: {
 				Blush: [{ ExpressionModifier: 1, Duration: 10000 }],
+			},
+		},
+        BlushAndCloseEye: {
+			Type: "Blush",
+			Duration: -1,
+			Expression: {
+				Blush: [{ ExpressionModifier: 1, Duration: -1 }],
+                Eyes: [{ Expression: "Closed", Duration: -1 },],
+                Eyes2: [{ Expression: "Closed", Duration: -1 },]
 			},
 		},
 		Choke: {
@@ -1413,6 +1422,15 @@
 				},
 			],
 		},
+        {
+			Event: "BlushAndCloseEye",
+			Type: "Activity",
+			Matchers: [
+				{
+					Tester: /^ChatSelf-ItemHead-笨蛋笨Luzi_i2il9b$/u,
+				},
+			],
+		},
 		{
 			Event: "GentleTouch",
 			Type: "Activity",
@@ -1491,6 +1509,15 @@
 				},
                 {
 					Tester: /^ChatSelf-ItemVulvaPiercings-弹阴蒂$/u,
+				},
+				{
+					Tester: /^ChatOther-ItemPelvis-LSCG_Tug$/u,
+					Criteria: {
+						TargetIsPlayer: true,
+					},
+				},
+                {
+					Tester: /^ChatSelf-ItemPelvis-LSCG_Tug$/u,
 				},
                 {
 					Tester: /^ChatOther-(ItemVulva|ItemVulvaPiercings|ItemNipples)-LSCG_Flick$/u,
